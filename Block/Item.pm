@@ -35,6 +35,13 @@ sub new {
 	return $self;
 }
 
+# Get base number.
+sub base {
+	my $self = shift;
+	my $base = substr $self->{'hex'}, 0, -1;
+	return 'U+'.$base.'x';
+}
+
 # Get hex number.
 sub hex {
 	my $self = shift;
