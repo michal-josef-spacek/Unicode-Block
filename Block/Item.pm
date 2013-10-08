@@ -35,13 +35,10 @@ sub new {
 	return $self;
 }
 
-# Get value.
-sub value {
+# Get hex number.
+sub hex {
 	my $self = shift;
-	if (! exists $self->{'u'}) {
-		$self->{'u'} = Unicode::Char->new;
-	}
-	return $self->{'u'}->u($self->{'hex'});
+	return $self->{'hex'};
 }
 
 # Get last number.
@@ -50,10 +47,13 @@ sub last_hex {
 	return substr $self->{'hex'}, -1;
 }
 
-# Get hex number.
-sub hex {
+# Get value.
+sub value {
 	my $self = shift;
-	return $self->{'hex'};
+	if (! exists $self->{'u'}) {
+		$self->{'u'} = Unicode::Char->new;
+	}
+	return $self->{'u'}->u($self->{'hex'});
 }
 
 1;
