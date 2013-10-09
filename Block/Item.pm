@@ -79,6 +79,10 @@ sub value {
 	# Non-Spacing Mark.
 	if ($char =~ m/\p{Mn}/ms) {
 		$char = $SPACE.$char;
+
+	# Control.
+	} elsif ($char =~ m/\p{Cc}/ms) {
+		$char = $SPACE;
 	}
 
 	return $char;
