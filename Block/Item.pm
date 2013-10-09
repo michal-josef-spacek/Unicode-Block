@@ -83,6 +83,10 @@ sub value {
 	# Control.
 	} elsif ($char =~ m/\p{Cc}/ms) {
 		$char = $SPACE;
+
+	# Not Assigned.
+	} elsif ($char =~ m/\p{Cn}/ms) {
+		$char = $SPACE;
 	}
 
 	return $char;
