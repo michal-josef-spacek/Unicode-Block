@@ -17,6 +17,11 @@ t/Unicode-Block-Item/00-use.t
 t/Unicode-Block-Item/01-version.t
 t/Unicode-Block-Item/02-pod_coverage.t
 t/Unicode-Block-Item/03-pod.t
+t/Unicode-Block-Item/04-new.t
+t/Unicode-Block-Item/05-base.t
+t/Unicode-Block-Item/06-hex.t
+t/Unicode-Block-Item/07-last_hex.t
+t/Unicode-Block-Item/08-value.t
 t/Unicode-Block/00-use.t
 t/Unicode-Block/01-version.t
 t/Unicode-Block/02-pod_coverage.t
