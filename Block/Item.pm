@@ -29,9 +29,11 @@ sub new {
 	set_params($self, @params);
 
 	# Check hex number.
-	# TODO Check hex.
-	if (! $self->{'hex'}) {
-		err "Parameter 'hex' is bad.";
+	if (! defined $self->{'hex'}) {
+		err "Parameter 'hex' is required.";
+	}
+	if (! $self->_is_hex) {
+		err "Parameter 'hex' isn't hexadecimal number.";
 	}
 
 	# Object.
@@ -65,6 +67,25 @@ sub value {
 		$self->{'u'} = Unicode::Char->new;
 	}
 	return $self->{'u'}->u($self->{'hex'});
+}
+
+# Check for hex number.
+sub _is_hex {
+	my $self = shift;
+	if ($self->{'hex'} !~ m/^[0-9a-f]+$/ims) {
+		return 0;
+	}
+	my $int = CORE::hex $self->{'hex'};
+	if (! defined $int) {
+		return 0;
+	}
+	my $hex = sprintf '%x', $int;
+	my $value = $self->{'hex'};
+	$value =~ s/^0*//ms;
+	if ($hex ne $value) {
+		return 0;
+	}
+	return 1;
 }
 
 1;
