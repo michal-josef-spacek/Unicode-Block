@@ -22,6 +22,9 @@ sub new {
 	# Hexadecimal number.
 	$self->{'hex'} = undef;
 
+	# Length of hex number.
+	$self->{'hex_length'} = 4;
+
 	# Process parameters.
 	set_params($self, @params);
 
@@ -45,7 +48,8 @@ sub base {
 # Get hex number.
 sub hex {
 	my $self = shift;
-	return $self->{'hex'};
+	return sprintf '%0'.$self->{'hex_length'}.'x',
+		CORE::hex $self->{'hex'};
 }
 
 # Get last number.
