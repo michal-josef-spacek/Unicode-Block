@@ -41,7 +41,7 @@ sub new {
 # Get base number.
 sub base {
 	my $self = shift;
-	my $base = substr $self->{'hex'}, 0, -1;
+	my $base = substr $self->hex, 0, -1;
 	return 'U+'.$base.'x';
 }
 
