@@ -7,7 +7,11 @@ use warnings;
 # Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
+use Readonly;
 use Unicode::Char;
+
+# Constants.
+Readonly::Scalar our $SPACE => q{ };
 
 # Version.
 our $VERSION = 0.01;
@@ -63,10 +67,21 @@ sub last_hex {
 # Get value.
 sub value {
 	my $self = shift;
+
+	# Create object.
 	if (! exists $self->{'u'}) {
 		$self->{'u'} = Unicode::Char->new;
 	}
-	return $self->{'u'}->u($self->{'hex'});
+
+	# Get value.
+	my $char = $self->{'u'}->u($self->{'hex'});
+
+	# Non-Spacing Mark.
+	if ($char =~ m/\p{Mn}/ms) {
+		$char = $SPACE.$char;
+	}
+
+	return $char;
 }
 
 # Check for hex number.
