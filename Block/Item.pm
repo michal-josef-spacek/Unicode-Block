@@ -77,7 +77,7 @@ sub value {
 	my $char = $self->{'u'}->u($self->{'hex'});
 
 	# Non-Spacing Mark.
-	if ($char =~ m/\p{Mn}/ms) {
+	if ($char =~ m/\p{Mn}/ms || $char =~ m/\p{Me}/ms) {
 		$char = $SPACE.$char;
 
 	# Control.
