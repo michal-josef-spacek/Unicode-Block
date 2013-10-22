@@ -77,8 +77,8 @@ Unicode::Block - Class for unicode block manipulation.
 
 =head1 SYNOPSIS
 
- use Unicode::Object;
- my $obj = Unicode::Object->new(%parameters);
+ use Unicode::Block;
+ my $obj = Unicode::Block->new(%parameters);
  my $item = $obj->next;
 
 =head1 METHODS
