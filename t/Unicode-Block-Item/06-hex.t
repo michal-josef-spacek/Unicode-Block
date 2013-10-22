@@ -4,7 +4,7 @@ use warnings;
 
 # Modules.
 use Unicode::Block::Item;
-use Test::More 'tests' => 2;
+use Test::More 'tests' => 4;
 use Test::NoWarnings;
 
 # Test.
@@ -13,3 +13,17 @@ my $obj = Unicode::Block::Item->new(
 );
 my $ret = $obj->hex;
 is($ret, '000a', "Get hex number for '0a'.");
+
+# Test.
+$obj = Unicode::Block::Item->new(
+	'hex' => '0000',
+);
+$ret = $obj->hex;
+is($ret, '0000', "Get hex number for '0000'.");
+
+# Test.
+$obj = Unicode::Block::Item->new(
+	'hex' => '0',
+);
+$ret = $obj->hex;
+is($ret, '0000', "Get hex number for '0'.");
