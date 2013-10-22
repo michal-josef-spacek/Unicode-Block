@@ -12,5 +12,5 @@ use Test::NoWarnings;
 my $obj = Unicode::Block::Item->new(
 	'hex' => '2661',
 );
-my $ret = $obj->value;
+my $ret = $obj->char;
 is($ret, decode_utf8('♡'), "Get unicode character for for '2661'.");

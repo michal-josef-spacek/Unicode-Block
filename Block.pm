@@ -140,7 +140,7 @@ Constructor.
                         print " ";
                 }
         }
-        print encode_utf8($char->value);
+        print encode_utf8($char->char);
         $num++;
  }
  print "\n";

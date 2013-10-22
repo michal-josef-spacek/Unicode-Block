@@ -44,28 +44,15 @@ sub new {
 	return $self;
 }
 
-# Get base number.
+# Get hex base number.
 sub base {
 	my $self = shift;
 	my $base = substr $self->hex, 0, -1;
 	return 'U+'.$base.'x';
 }
 
-# Get hex number.
-sub hex {
-	my $self = shift;
-	return sprintf '%0'.$self->{'hex_length'}.'x',
-		CORE::hex $self->{'hex'};
-}
-
-# Get last number.
-sub last_hex {
-	my $self = shift;
-	return substr $self->{'hex'}, -1;
-}
-
-# Get value.
-sub value {
+# Get character.
+sub char {
 	my $self = shift;
 
 	# Create object.
@@ -73,7 +60,7 @@ sub value {
 		$self->{'u'} = Unicode::Char->new;
 	}
 
-	# Get value.
+	# Get char.
 	my $char = $self->{'u'}->u($self->{'hex'});
 
 	# Non-Spacing Mark.
@@ -90,6 +77,19 @@ sub value {
 	}
 
 	return $char;
+}
+
+# Get hex number.
+sub hex {
+	my $self = shift;
+	return sprintf '%0'.$self->{'hex_length'}.'x',
+		CORE::hex $self->{'hex'};
+}
+
+# Get last hex number.
+sub last_hex {
+	my $self = shift;
+	return substr $self->{'hex'}, -1;
 }
 
 # Check for hex number.
