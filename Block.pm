@@ -64,3 +64,118 @@ sub _count {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Unicode::Block - Class for unicode block manipulation.
+
+=head1 SYNOPSIS
+
+ use Unicode::Object;
+ my $obj = Unicode::Object->new(%parameters);
+ my $item = $obj->next;
+
+=head1 METHODS
+
+=over 8
+
+=item C<new(%parameters)>
+
+Constructor.
+
+=over 8
+
+=item * C<char_from>
+
+ Character from.
+ Default value is '0000'.
+
+=item * C<char_to>
+
+ Character to.
+ Default value is '007f'.
+
+=back
+
+=item C<next()>
+
+ Get next character.
+ Returns Unicode::Block::Item object for character, if character exists.
+ Returns undef, if character doesn't exist.
+
+=back
+
+=head1 ERRORS
+
+ new():
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Encode qw(encode_utf8);
+ use Unicode::Block;
+
+ # Object.
+ my $obj = Unicode::Block->new;
+
+ # Print all.
+ my $num = 0;
+ while (my $char = $obj->next) {
+        if ($num != 0) {
+                if ($num % 16 == 0) {
+                        print "\n";
+                } else {
+                        print " ";
+                }
+        }
+        print encode_utf8($char->value);
+        $num++;
+ }
+ print "\n";
+
+ # Output.
+ #                                
+ #                                
+ #   ! " # $ % & ' ( ) * + , - . /
+ # 0 1 2 3 4 5 6 7 8 9 : ; < = > ?
+ # @ A B C D E F G H I J K L M N O
+ # P Q R S T U V W X Y Z [ \ ] ^ _
+ # ` a b c d e f g h i j k l m n o
+ # p q r s t u v w x y z { | } ~  
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<Unicode::Block::Item>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Unicode-Block>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
