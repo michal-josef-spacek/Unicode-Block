@@ -105,6 +105,9 @@ sub _is_hex {
 	my $hex = sprintf '%x', $int;
 	my $value = $self->{'hex'};
 	$value =~ s/^0*//ms;
+	if ($value eq '') {
+		$value = 0;
+	}
 	if ($hex ne $value) {
 		return 0;
 	}
