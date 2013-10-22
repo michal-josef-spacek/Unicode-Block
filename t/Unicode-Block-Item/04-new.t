@@ -6,7 +6,7 @@ use warnings;
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use Unicode::Block::Item;
-use Test::More 'tests' => 7;
+use Test::More 'tests' => 8;
 use Test::NoWarnings;
 
 # Test.
@@ -53,5 +53,11 @@ isa_ok($obj, 'Unicode::Block::Item');
 # Test.
 $obj = Unicode::Block::Item->new(
 	'hex' => 'a',
+);
+isa_ok($obj, 'Unicode::Block::Item');
+
+# Test.
+$obj = Unicode::Block::Item->new(
+	'hex' => 'A',
 );
 isa_ok($obj, 'Unicode::Block::Item');

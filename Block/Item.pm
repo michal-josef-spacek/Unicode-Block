@@ -95,7 +95,7 @@ sub value {
 # Check for hex number.
 sub _is_hex {
 	my $self = shift;
-	if ($self->{'hex'} !~ m/^[0-9a-f]+$/ims) {
+	if ($self->{'hex'} !~ m/^[0-9a-fA-F]+$/ims) {
 		return 0;
 	}
 	my $int = CORE::hex $self->{'hex'};
@@ -103,7 +103,7 @@ sub _is_hex {
 		return 0;
 	}
 	my $hex = sprintf '%x', $int;
-	my $value = $self->{'hex'};
+	my $value = lc $self->{'hex'};
 	$value =~ s/^0*//ms;
 	if ($value eq '') {
 		$value = 0;
