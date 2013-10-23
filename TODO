@@ -2,7 +2,8 @@ TODO
 ====
 2. Testy.
 3. Kontrola na char_from a char_to?
-4.
+4. Do Item.pm pridat hodnotu sirky znaku. mbwidth().
+5.
 
 Applied
 =======
