@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 # Modules.
-use Class::Utils qw(set_params);
+use Class::Utils qw(set_params_pub);
 use Unicode::Block::Item;
 
 # Version.
@@ -28,7 +28,7 @@ sub new {
 	$self->{'title'} = undef;
 
 	# Process parameters.
-	set_params($self, @params);
+	set_params_pub($self, @params);
 
 	# Count.
 	$self->{'_count'} = $self->{'char_from'};
@@ -122,7 +122,7 @@ Constructor.
 =head1 ERRORS
 
  new():
-         From Class::Utils::set_params():
+         From Class::Utils::set_params_pub():
                  Unknown parameter '%s'.
 
 =head1 EXAMPLE
