@@ -96,7 +96,13 @@ sub last_hex {
 # Get character width.
 sub width {
 	my $self = shift;
-	return mbwidth($self->char);
+	if (! exists $self->{'_width'}) {
+		$self->{'_width'} = mbwidth($self->char);
+		if ($self->{'_width'} == -1) {
+			$self->{'_width'} = 1;
+		}
+	}
+	return $self->{'_width'};
 }
 
 # Check for hex number.
