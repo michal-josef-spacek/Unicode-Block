@@ -8,6 +8,7 @@ use warnings;
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Readonly;
+use Text::CharWidth qw(mbwidth);
 use Unicode::Char;
 
 # Constants.
@@ -92,6 +93,12 @@ sub last_hex {
 	return substr $self->{'hex'}, -1;
 }
 
+# Get character width.
+sub width {
+	my $self = shift;
+	return mbwidth($self->char);
+}
+
 # Check for hex number.
 sub _is_hex {
 	my $self = shift;
@@ -134,6 +141,7 @@ Unicode::Block::Item - Class for unicode block character.
  my $char = $obj->char;
  my $hex = $obj->hex;
  my $last_hex = $obj->last_hex;
+ my $width = $obj->width;
 
 =head1 METHODS
 
@@ -182,6 +190,11 @@ Constructor.
  Example: 'hex' => 1234h; Returns '4'.
  Returns string with last hex number.
 
+=item C<width()>
+
+ Get character width.
+ Returns string with width.
+
 =back
 
 =head1 ERRORS
@@ -224,6 +237,7 @@ Constructor.
 L<Class::Utils>,
 L<Error::Pure>,
 L<Readonly>,
+L<Text::CharWidth>,
 L<Unicode::Char>.
 
 =head1 REPOSITORY

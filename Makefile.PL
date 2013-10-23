@@ -12,6 +12,7 @@ license 'bsd';
 name 'Unicode-Block';
 requires 'Class::Utils' => 0.02;
 requires 'Error::Pure' => 0.13;
+requires 'Text::CharWidth' => 0;
 requires 'Unicode::Char' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Unicode-Block';
