@@ -24,6 +24,9 @@ sub new {
 	# Character to.
 	$self->{'char_to'} = '007F',
 
+	# Title.
+	$self->{'title'} = undef;
+
 	# Process parameters.
 	set_params($self, @params);
 
@@ -100,6 +103,11 @@ Constructor.
 
  Character to.
  Default value is '007f'.
+
+=item * C<title>
+
+ Title of block.
+ Default value is undef.
 
 =back
 
