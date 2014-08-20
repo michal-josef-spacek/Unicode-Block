@@ -1,0 +1,60 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 eb91a03389c524ee51566c262c1731c23fea7321 Block.pm
+SHA1 c1b33c0a328f1b18a8adefafca164f428c8765af Block/Item.pm
+SHA1 dac377bb0725d1d6266b0e10492660fe4f5b250e Changes
+SHA1 d32d1b957eb6d99bd7b76fd8c33dac3bed505f96 LICENSE
+SHA1 e7419f9b88cb4e156929feff34c745855201f631 MANIFEST
+SHA1 b1b0dcd198836f56acd0bd5a09142ffe70a10013 META.yml
+SHA1 69fcb21193228a61a1c097c256c2f45c08c2c23e Makefile.PL
+SHA1 12ff4ef922d6e958393bbc6af7562ed6f76178d2 README
+SHA1 1e3b017f339dfb3d568f3c4fea05675cff7073fa examples/ex1.pl
+SHA1 0eca3938f2578478eefc7b71761cff7a22daf4cd examples/ex2.pl
+SHA1 4f7982f7e554df23debce735ab343d88d7355140 inc/Module/Install.pm
+SHA1 c68c85ca62ae30d83f633975cd9af2a0789f59e0 inc/Module/Install/Base.pm
+SHA1 4797fd314e2653a427e725104704b0320993ba8c inc/Module/Install/Can.pm
+SHA1 b771d93af2bfc41273f48fa36082bf1bd6f21dbe inc/Module/Install/Fetch.pm
+SHA1 f4f3258a505a432a58cbcdc1fd030ef5e8e90985 inc/Module/Install/Makefile.pm
+SHA1 100a0dd8572f0b40373350fdd6c0a6f035d9dc39 inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 4490fed943f4e556db9fd054b7ec8765ca417f7d inc/Module/Install/Win32.pm
+SHA1 8464ddf690b9f7036a0974ff172ec0ced2f6a329 inc/Module/Install/WriteAll.pm
+SHA1 76005628918c7012269ce5c52ff964fae76fd33b t/Unicode-Block-Item/00-use.t
+SHA1 75d1b9aae7043a7ca1727bf211c543f5c697ab65 t/Unicode-Block-Item/01-version.t
+SHA1 ae9f7d7bbdd3b613d5d993055a29f09ff22be4b9 t/Unicode-Block-Item/02-pod_coverage.t
+SHA1 8472870ee5d85fc95747a6fdee795e23c47d474c t/Unicode-Block-Item/03-pod.t
+SHA1 9c1aea4de4bb185c27d2022bd44e1872ccd26290 t/Unicode-Block-Item/04-new.t
+SHA1 cf9b82ea83012a135b3fc81e26ad64a3cbdf8a0a t/Unicode-Block-Item/05-base.t
+SHA1 17e7fe4cd25d1cec4ae4fad2914ac5fa3dc037e8 t/Unicode-Block-Item/06-char.t
+SHA1 feb0ecd561414dba5de8b3359e01fa16aef7ea46 t/Unicode-Block-Item/07-hex.t
+SHA1 cf02eee9c96c89fd1523acb0612651d0442141ae t/Unicode-Block-Item/08-last_hex.t
+SHA1 1230a1df03459bef04cd098be03849f35de99d82 t/Unicode-Block-Item/09-width.t
+SHA1 47a2397094e7ed68cd5e60e9eb414718f958a19f t/Unicode-Block/00-use.t
+SHA1 e42dda32d11d0b3c77213d9a6b288a4015b52426 t/Unicode-Block/01-version.t
+SHA1 fe985a4bcb1a0715ff8ed882598e3737faeba518 t/Unicode-Block/02-pod_coverage.t
+SHA1 c75014be45dbd3bb5948255cee784cd3ddbdab09 t/Unicode-Block/03-pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJT9DP5AAoJEAwa+cf4dLBaeooIAO1P3f2tywLKTbG0mDGk0N6Y
+QWY6UwJtmLLBcLlyogocFh99sT54qhndKNQbtKbZjPL1QAJOUQF8OYm8xD2eIqVn
+xhz6uNXiUgGuQBCPgS3Ycj8pXPYUp/+sNyr2VaKH3KpbBxBBvuROza3HTuWWizPy
+3ohNdqMPurryiE9v0T18IR1qbYGL7XHU83brYNAlcHPl5eZeuVnpa8kvm5dTThsg
+mpKBmSWtjMks6utQ2kqXBXLcBMuwmG+ATLz3kT85dmLKorhKqAt3B0xQLkltxqj1
+CA3l1He4+9mU9EduL4S4cEermy4eo60VWch5ZsmZZRMgfN0rqLOSNsqHhW36ADA=
+=e93I
+-----END PGP SIGNATURE-----
