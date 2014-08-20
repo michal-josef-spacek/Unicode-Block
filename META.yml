@@ -28,7 +28,7 @@ no_index:
     - inc
     - t
 requires:
-  Class::Utils: 0.02
+  Class::Utils: 0.06
   Error::Pure: 0.13
   Text::CharWidth: 0
   Unicode::Char: 0

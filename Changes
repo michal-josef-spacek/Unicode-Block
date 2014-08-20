@@ -1,4 +1,5 @@
 0.02
+ - Fix dependency to Class::Utils 0.06 version.
 
 0.01 2014-08-20T07:36:40+02:00
  - First version.
