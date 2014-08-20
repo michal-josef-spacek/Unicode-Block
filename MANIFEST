@@ -24,6 +24,7 @@ t/Unicode-Block-Item/05-base.t
 t/Unicode-Block-Item/06-char.t
 t/Unicode-Block-Item/07-hex.t
 t/Unicode-Block-Item/08-last_hex.t
+t/Unicode-Block-Item/09-width.t
 t/Unicode-Block/00-use.t
 t/Unicode-Block/01-version.t
 t/Unicode-Block/02-pod_coverage.t
