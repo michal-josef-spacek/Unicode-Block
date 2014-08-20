@@ -9,7 +9,7 @@ use Class::Utils qw(set_params_pub);
 use Unicode::Block::Item;
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
@@ -184,6 +184,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
