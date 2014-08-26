@@ -8,4 +8,4 @@ use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
-is($Unicode::Block::Item::VERSION, 0.03, 'Version.');
+is($Unicode::Block::Item::VERSION, 0.04, 'Version.');
