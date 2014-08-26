@@ -32,3 +32,4 @@ t/Unicode-Block/00-use.t
 t/Unicode-Block/01-version.t
 t/Unicode-Block/02-pod_coverage.t
 t/Unicode-Block/03-pod.t
+t/Unicode-Block/04-new.t
