@@ -64,7 +64,7 @@ sub char {
 	# Get char.
 	my $char = $self->{'u'}->u($self->{'hex'});
 
-	# Non-Spacing Mark.
+	# 'Non-Spacing Mark' and 'Enclosing Mark'.
 	if ($char =~ m/\p{Mn}/ms || $char =~ m/\p{Me}/ms) {
 		$char = $SPACE.$char;
 
