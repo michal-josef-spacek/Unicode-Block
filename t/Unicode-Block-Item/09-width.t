@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 # Modules.
-use Test::More 'tests' => 6;
+use Test::More 'tests' => 8;
 use Test::NoWarnings;
 use Unicode::Block::Item;
 
@@ -41,3 +41,14 @@ $obj = Unicode::Block::Item->new(
 );
 $ret = $obj->width;
 is($ret, 1, "Get width for '0300', which is \'Non-Spacing Mark\'.");
+
+# Test.
+$obj = Unicode::Block::Item->new(
+	'hex' => '1106d',
+);
+$ret = $obj->width;
+is($ret, 1, "Get width for '1106d'.");
+
+# Test.
+$ret = $obj->width;
+is($ret, 1, "Get width for '1106d' again.");
