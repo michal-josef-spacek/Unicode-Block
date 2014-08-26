@@ -3,9 +3,9 @@ use strict;
 use warnings;
 
 # Modules.
-use Unicode::Block::Item;
 use Test::More 'tests' => 3;
 use Test::NoWarnings;
+use Unicode::Block::Item;
 
 # Test.
 my $obj = Unicode::Block::Item->new(

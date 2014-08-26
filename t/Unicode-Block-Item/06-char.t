@@ -4,9 +4,9 @@ use warnings;
 
 # Modules.
 use Encode qw(decode_utf8);
-use Unicode::Block::Item;
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
+use Unicode::Block::Item;
 
 # Test.
 my $obj = Unicode::Block::Item->new(

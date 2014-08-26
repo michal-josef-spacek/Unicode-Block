@@ -5,9 +5,9 @@ use warnings;
 # Modules.
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
-use Unicode::Block::Item;
 use Test::More 'tests' => 8;
 use Test::NoWarnings;
+use Unicode::Block::Item;
 
 # Test.
 eval {
