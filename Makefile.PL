@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Class for unicode block manipulation.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Unicode-Block';
 readme_from 'Block.pm';
