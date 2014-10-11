@@ -246,6 +246,10 @@ L<Readonly>,
 L<Text::CharWidth>,
 L<Unicode::Char>.
 
+=head1 SEE ALSO
+
+L<Unicode::Block>.
+
 =head1 REPOSITORY
 
 L<https://github.com/tupinek/Unicode-Block>

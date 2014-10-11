@@ -1,5 +1,6 @@
 0.04
  - Add SEE ALSO section to Unicode::Block doc.
+ - Add SEE ALSO section to Unicode::Block::Item doc.
  - Update Module::Install to 1.12 version.
 
 0.03 2014-08-26T03:04:50+02:00
