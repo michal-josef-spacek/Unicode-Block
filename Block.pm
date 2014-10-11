@@ -168,6 +168,11 @@ Constructor.
 L<Class::Utils>,
 L<Unicode::Block::Item>.
 
+=head1 SEE ALSO
+
+L<Unicode::Block::Ascii>,
+L<Unicode::Block::List>.
+
 =head1 REPOSITORY
 
 L<https://github.com/tupinek/Unicode-Block>
