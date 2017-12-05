@@ -1,7 +1,7 @@
 ---
 abstract: 'Class for unicode block manipulation.'
 author:
-  - 'Michal Spacek <skim@cpan.org>'
+  - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
   Encode: 0
   English: 0

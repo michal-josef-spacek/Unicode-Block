@@ -4,6 +4,7 @@
  - Fix test 09-width.t for C locale.
  - Rewrite unassigned unicode character to '' (blank space).
  - Update Module::Install to 1.18 version.
+ - Update author name.
  - Update copyright years.
 
 0.03 2014-08-26T03:04:50+02:00
