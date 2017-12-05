@@ -24,7 +24,7 @@ $obj = Unicode::Block::Item->new(
 	'hex' => '1018F',
 );
 $ret = $obj->char;
-is($ret, ' ', 'Get unicode character for 1018C, which is unasigned.');
+is($ret, '', 'Get unicode character for 1018C, which is unasigned.');
 
 # Test.
 $obj = Unicode::Block::Item->new(

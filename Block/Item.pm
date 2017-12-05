@@ -12,6 +12,7 @@ use Text::CharWidth qw(mbwidth);
 use Unicode::Char;
 
 # Constants.
+Readonly::Scalar our $EMPTY_STR => q{};
 Readonly::Scalar our $SPACE => q{ };
 
 # Version.
@@ -74,7 +75,7 @@ sub char {
 
 	# Not Assigned.
 	} elsif ($char =~ m/\p{Cn}/ms) {
-		$char = $SPACE;
+		$char = $EMPTY_STR;
 	}
 
 	return $char;
