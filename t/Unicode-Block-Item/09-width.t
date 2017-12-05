@@ -3,11 +3,13 @@ use strict;
 use warnings;
 
 # Modules.
+use POSIX qw(LC_ALL setlocale);
 use Test::More 'tests' => 8;
 use Test::NoWarnings;
 use Unicode::Block::Item;
 
 # Test.
+setlocale(LC_ALL, 'en_US.UTF-8');
 my $obj = Unicode::Block::Item->new(
 	'hex' => '0a',
 );

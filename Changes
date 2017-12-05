@@ -1,6 +1,7 @@
 0.04
  - Add SEE ALSO section to Unicode::Block doc.
  - Add SEE ALSO section to Unicode::Block::Item doc.
+ - Fix test 09-width.t for C locale.
  - Rewrite unassigned unicode character to '' (blank space).
  - Update Module::Install to 1.18 version.
 
