@@ -1,4 +1,4 @@
-0.04
+0.04 2017-12-19T14:12:57+01:00
  - Add SEE ALSO section to Unicode::Block doc.
  - Add SEE ALSO section to Unicode::Block::Item doc.
  - Fix test 09-width.t for C locale.
