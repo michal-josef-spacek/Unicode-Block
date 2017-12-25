@@ -17,6 +17,7 @@ author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
 name 'Unicode-Block';
 readme_from 'Block.pm';
+recursive_author_tests('xt');
 requires 'Class::Utils' => 0.06;
 requires 'Error::Pure' => 0.13;
 requires 'Text::CharWidth' => 0;
