@@ -2,7 +2,6 @@ TODO
 ====
 2. Testy.
 3. Kontrola na char_from a char_to?
-4. Do Item.pm pridat hodnotu sirky znaku. mbwidth().
 6.
 
 Applied
@@ -12,3 +11,7 @@ OK [20131023] skim
 
 5. Jde resit neprirazene znaky? (U+0380) \p{Cn}
 OK [20171205] skim
+
+4. Do Item.pm pridat hodnotu sirky znaku. mbwidth().
+To tam mam.
+OK [20171225] skim
