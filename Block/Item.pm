@@ -169,6 +169,7 @@ Constructor.
 =item * C<hex_length>
 
  Length of hex number.
+ It's used for formatting of hex() method output.
  Default value is 4.
 
 =back
