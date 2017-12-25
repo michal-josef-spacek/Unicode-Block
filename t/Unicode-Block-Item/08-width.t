@@ -3,6 +3,7 @@ use strict;
 use warnings;
 
 # Modules.
+use English;
 use POSIX qw(LC_ALL setlocale);
 use Test::More 'tests' => 8;
 use Test::NoWarnings;
@@ -45,11 +46,17 @@ $ret = $obj->width;
 is($ret, 1, "Get width for '0300', which is \'Non-Spacing Mark\'.");
 
 # Test.
-$obj = Unicode::Block::Item->new(
-	'hex' => '1106d',
-);
-$ret = $obj->width;
-is($ret, 1, "Get width for '1106d'.");
+SKIP: {
+	if ($PERL_VERSION lt v5.14.0) {
+		skip 'Perl version lesser then 5.14.0 has not Brahmi Unicode block.', 1;
+	}
+
+	$obj = Unicode::Block::Item->new(
+		'hex' => '1106d',
+	);
+	$ret = $obj->width;
+	is($ret, 1, "Get width for '1106d'.");
+};
 
 # Test.
 $ret = $obj->width;
