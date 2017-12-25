@@ -1,4 +1,4 @@
-0.05
+0.05 2017-12-25T16:29:54+01:00
  - Add information about hex_length in doc.
  - Fix running of author tests.
  - Fix test of Brahmi block in Perl lesser than 5.14.0.

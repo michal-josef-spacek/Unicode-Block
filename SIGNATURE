@@ -14,18 +14,19 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 8ff688eec7cae154f0dc22179342348c60f3c04c Block.pm
-SHA1 ee29ac545753a5d02d5d319b4cf3af28ce104a59 Block/Item.pm
-SHA1 f4efdbf432d3a9449791c56fe76978cce0607637 Changes
+SHA1 517bc70b94ee3e0f8973d31fae96e992dd851aa5 Block.pm
+SHA1 1906d43347404d69cf64cbd051f678fb2eafc693 Block/Item.pm
+SHA1 75be9641a3e31a3546b72747c336008701cdf4ab Changes
 SHA1 bb306a003553f898c2a9c013f40281b27bd3c936 LICENSE
-SHA1 8cc14edf992ffdd92dc2464ad2f44ad5342d3b14 MANIFEST
-SHA1 fb49bf90ac5e1fe9333b16d25ad50424783538f8 META.yml
-SHA1 b65b5e4961f56d8e6cc5ece04661ed2edfa7f11e Makefile.PL
-SHA1 d812c7fdf273731e8195f93c82a2ae855587233c README
+SHA1 1f61f28926118d6ed16553da6643a36a78372450 MANIFEST
+SHA1 85f2c19221d7aff5479f359ffe628f5550919946 META.yml
+SHA1 acc1d33a7ff04a5f324c5d9be652f97d49256fa4 Makefile.PL
+SHA1 f59f745ce578a1430b58521cd817d993ad1ea02d README
 SHA1 1e3b017f339dfb3d568f3c4fea05675cff7073fa examples/ex1.pl
 SHA1 0eca3938f2578478eefc7b71761cff7a22daf4cd examples/ex2.pl
 SHA1 fb87e7e7964647af0e7f6422bc7943754935dca7 inc/Module/Install.pm
 SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
+SHA1 d001b4b9a48395a8c4134b234a0e1789138427c5 inc/Module/Install/AuthorTests.pm
 SHA1 06ca84c52f555dfd7cf8bb7c941c975e25adfc9d inc/Module/Install/Base.pm
 SHA1 3eeb29878c8a435182b492e22315166a0229a373 inc/Module/Install/Can.pm
 SHA1 3bb596078a0413cc568ff3a834d9fc54dbddd54b inc/Module/Install/Fetch.pm
@@ -35,15 +36,15 @@ SHA1 8d19f4485276b987b7838d4ec01909f8055a4724 inc/Module/Install/ReadmeFromPod.p
 SHA1 b0b3ad3cfea40b508eb61e0e5c8ea477f81f3eb1 inc/Module/Install/Win32.pm
 SHA1 b162866505fb2a1141efa422cfdc864394cb4444 inc/Module/Install/WriteAll.pm
 SHA1 0d363f8feb1c12583ea2acf080b02a7d4adf7890 t/Unicode-Block-Item/01-use.t
-SHA1 1b4f01aed021c56cf0c542fa80e61499b407c493 t/Unicode-Block-Item/02-version.t
+SHA1 2ceb3b0a2605d4d4d2ee1176ce1e22bad80838d3 t/Unicode-Block-Item/02-version.t
 SHA1 9d9d773de75f132a5e3e33f9706257a45afae972 t/Unicode-Block-Item/03-new.t
 SHA1 8192c37c647b9cc55e2610e65ed3ad65d905f3b3 t/Unicode-Block-Item/04-base.t
 SHA1 a75160b994595e29e89ac1cc8765de2a4f2e7981 t/Unicode-Block-Item/05-char.t
 SHA1 2e1700a6ea86d5e3953b75c97d39e2ec5fa9fd10 t/Unicode-Block-Item/06-hex.t
 SHA1 50d2d491032d11ece70952db1ef39fc3b7076683 t/Unicode-Block-Item/07-last_hex.t
-SHA1 9c1715565817365aa5d54da539f69f7df5202007 t/Unicode-Block-Item/08-width.t
+SHA1 28ea5e160cc4c161b45da177f89b58000dad501c t/Unicode-Block-Item/08-width.t
 SHA1 dc6dde0b17995747467bac798b44b3cdbc20dc34 t/Unicode-Block/01-use.t
-SHA1 3a09c4c23a6e737cb445b6e879fdc820ccd52465 t/Unicode-Block/02-version.t
+SHA1 1beead775aa0e32a830d857257265e3507a5ba1d t/Unicode-Block/02-version.t
 SHA1 cac7960f6e445180c74d4d4042a3c15bbc95c8a1 t/Unicode-Block/03-new.t
 SHA1 c8ca118dce50fc40d7ea70b49ccdc64d91ccdc2e t/Unicode-Block/04-next.t
 SHA1 16f3d4ed2d5f4631fd0a6f3e4a6b438c9e3e19ab xt/Unicode-Block-Item/01-pod_coverage.t
@@ -52,12 +53,12 @@ SHA1 0b4f6fd52a00e19fc12fb5a12c780c515f1886e7 xt/Unicode-Block/01-pod_coverage.t
 SHA1 8d13f660a04090f3203f9009807c78331aa8c838 xt/Unicode-Block/02-pod.t
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEAxWqUSy7qDLVZJQKKyiOZjWerHYFAlo5EGAACgkQKyiOZjWe
-rHZucAf9FKMfjTYQ/6sQaRisaOoOqXYc5gJ+mCKkr5jgh1Efxe9GDi9W1w4BYDNQ
-DaUvGhiQclmnLT2mypdQ+huIIZSGJBdbxujXFWgxoiA6WYbQrzXXowDVRcQ4gRBP
-eXyF6ng5V9UYcwP0IsVneEokmu0uBLzgm34sYSCB547sMuVxUXFTxuLI0iu900UA
-B0UsyDB03tJsL+aEqGkJd9aYssy2j2SCrkxpfqCn9J6kU53mZ293TzuXJNbKwQIm
-+m3SeD5efifwvyDrK311rAVyRzwLcfqqIRLizPyp0oAyADNoMKo9jfSRwMHWTAjX
-0wvk1uEEABhwV4LTwBCGkrrZ4kbCPg==
-=AeRq
+iQEzBAEBCgAdFiEEAxWqUSy7qDLVZJQKKyiOZjWerHYFAlpBGXQACgkQKyiOZjWe
+rHZcoAf/XmvG7BVmlkGRSPbh7s2UAZ9PUKYUc49d24OelqSwOSLJzQw84VLxhX+Q
+ySQzD2YB96GplOrsOtemTgVXH5l/2YA1g+2mD5cFq3ww37g1gVdZ7CwVAiKhBKNm
+Y+Ya69ao6ir3O/sv372aeV2FHn7/afnLH6hfXK+YZfo3UBxW3m7c3dAVHd+E0wOU
+W+MfoAgUS7H/c1n1zp4E+HxbgFSp/D0/sH8292YmXO+nV7cWBoMdq47j4biqFbA2
+oMdwNYVg0WHY3Nyj/lAsRmP1qSNnAwCC7iC5rVr/oUBnvkbYV4X0gMkmLElhlYlt
+uQsvY4ZiuLQHoxhduZ+jpTSo7mzP9Q==
+=UD67
 -----END PGP SIGNATURE-----
