@@ -25,10 +25,10 @@ is($ret, '2', "Get width for '3111'.");
 
 # Test.
 $obj = Unicode::Block::Item->new(
-	'hex' => '1018F',
+	'hex' => '1018f',
 );
 $ret = $obj->width;
-is($ret, 0, "Get width for '1018C', which is unasigned.");
+is($ret, 0, "Get width for '1018f', which is unasigned.");
 
 # Test.
 $obj = Unicode::Block::Item->new(
