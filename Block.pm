@@ -170,8 +170,17 @@ L<Unicode::Block::Item>.
 
 =head1 SEE ALSO
 
-L<Unicode::Block::Ascii>,
-L<Unicode::Block::List>.
+=over
+
+=item L<Unicode::Block::Ascii>
+
+Ascii output of unicode block.
+
+=item L<Unicode::Block::List>
+
+List of unicode blocks.
+
+=back
 
 =head1 REPOSITORY
 

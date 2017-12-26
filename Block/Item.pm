@@ -250,7 +250,13 @@ L<Unicode::Char>.
 
 =head1 SEE ALSO
 
-L<Unicode::Block>.
+=over
+
+=item L<Unicode::Block>
+
+Class for unicode block manipulation.
+
+=back
 
 =head1 REPOSITORY
 
