@@ -1,5 +1,6 @@
 0.06
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
+ - Improve LICENSE AND COPYRIGHT section in doc.
 
 0.05 2017-12-25T16:29:54+01:00
  - Add information about hex_length in doc.
