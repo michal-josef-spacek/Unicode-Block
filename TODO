@@ -2,7 +2,8 @@ TODO
 ====
 2. Testy.
 3. Kontrola na char_from a char_to?
-6.
+6. Bude tady asi problem, pokud neni v systemu utf8 locales - t/Unicode-Block-Item/08-width.t
+7.
 
 Applied
 =======
