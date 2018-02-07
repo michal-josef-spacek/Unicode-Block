@@ -36,4 +36,4 @@ resources:
   homepage: https://github.com/tupinek/Unicode-Block
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/Unicode-Block
-version: '0.07'
+version: 0.08
