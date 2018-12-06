@@ -215,8 +215,8 @@ Constructor.
  use strict;
  use warnings;
 
- use Encode qw(encode_utf8);
  use Unicode::Block::Item;
+ use Unicode::UTF8 qw(encode_utf8);
 
  # Object.
  my $obj = Unicode::Block::Item->new(

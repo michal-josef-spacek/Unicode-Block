@@ -26,11 +26,11 @@ resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Unicode-Block';
 resources 'homepage' => 'https://github.com/tupinek/Unicode-Block';
 resources 'repository' => 'git://github.com/tupinek/Unicode-Block';
-test_requires 'Encode' => 0;
 test_requires 'English' => 0;
 test_requires 'Error::Pure::Utils' => 0.13;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
+test_requires 'Unicode::UTF8' => 0;
 tests_recursive;
 version '0.08';
 
