@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use Unicode::Block;
+
      my $obj = Unicode::Block->new(%parameters);
      my $item = $obj->next;
 

@@ -140,6 +140,7 @@ Unicode::Block::Item - Class for unicode block character.
 =head1 SYNOPSIS
 
  use Unicode::Block::Item;
+
  my $obj = Unicode::Block::Item->new(%parameters);
  my $base = $obj->base;
  my $char = $obj->char;
