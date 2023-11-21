@@ -160,15 +160,18 @@ Constructor.
 
 =item * C<hex>
 
- Hexadecimal number.
- Default value is undef.
- It is required.
+Hexadecimal number.
+
+It is required.
+
+Default value is undef.
 
 =item * C<hex_length>
 
- Length of hex number.
- It's used for formatting of hex() method output.
- Default value is 4.
+Length of hex number.
+It's used for formatting of hex() method output.
+
+Default value is 4.
 
 =back
 

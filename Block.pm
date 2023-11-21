@@ -94,18 +94,21 @@ Constructor.
 
 =item * C<char_from>
 
- Character from.
- Default value is '0000'.
+Character from.
+
+Default value is '0000'.
 
 =item * C<char_to>
 
- Character to.
- Default value is '007f'.
+Character to.
+
+Default value is '007f'.
 
 =item * C<title>
 
- Title of block.
- Default value is undef.
+Title of block.
+
+Default value is undef.
 
 =back
 
