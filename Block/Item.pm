@@ -231,6 +231,8 @@ Returns string with width.
 
 =head1 EXAMPLE
 
+=for comment filename=print_info_about_example_character.pl
+
  use strict;
  use warnings;
 

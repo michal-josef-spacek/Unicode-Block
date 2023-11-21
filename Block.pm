@@ -131,6 +131,8 @@ Returns undef, if character doesn't exist.
 
 =head1 EXAMPLE
 
+=for comment filename=print_ascii_block.pl
+
  use strict;
  use warnings;
 
