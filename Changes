@@ -2,6 +2,7 @@
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SYNOPSIS section in doc.
  - Rewrite Encode::decode_utf8 to better Unicode::UTF8::decode_utf8.
+ - Rewrite doc to use =head2 in methods.
  - Update Module::Install to 1.21 version.
  - Update copyright years.
 

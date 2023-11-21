@@ -84,9 +84,9 @@ Unicode::Block - Class for unicode block manipulation.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%parameters)>
+ my $obj = Unicode::Block->new(%parameters);
 
 Constructor.
 
@@ -109,13 +109,16 @@ Constructor.
 
 =back
 
-=item C<next()>
+Returns instance of object.
 
- Get next character.
- Returns Unicode::Block::Item object for character, if character exists.
- Returns undef, if character doesn't exist.
+=head2 C<next>
 
-=back
+ my $item = $obj->next;
+
+Get next character.
+
+Returns Unicode::Block::Item object for character, if character exists.
+Returns undef, if character doesn't exist.
 
 =head1 ERRORS
 
