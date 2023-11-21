@@ -1,4 +1,5 @@
 0.08
+ - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SYNOPSIS section in doc.
  - Rewrite Encode::decode_utf8 to better Unicode::UTF8::decode_utf8.
  - Update Module::Install to 1.21 version.
